@@ -1,0 +1,22 @@
+.button {
+    cursor: pointer;
+    font: inherit;
+    border: none;
+    background-color: #D90429;
+    color: white;
+    padding: 0.5rem 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+    box-shadow: 1px 2px 2px rgba(0,0,0,0.27);;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover,
+  .button:active {
+    background-color: rgb(138, 29, 29);
+    transition: background-color 0.4s ease;
+  }
+  
+ 
