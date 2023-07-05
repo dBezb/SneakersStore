@@ -1,0 +1,30 @@
+.footer {
+    text-align: center;
+    padding-top: 60px;
+  }
+  
+  .line {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 10px auto;
+    width: 80%;
+  }
+  
+  .text {
+    font-size: 14px;
+    color: #777;
+  }
+
+  .section {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .copyright{
+    padding-top: 15px;
+    font-size: 14px;
+    color: #777;
+  }
