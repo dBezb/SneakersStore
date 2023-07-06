@@ -1,7 +1,7 @@
-import ImageOne from "../../assets/ImageOne.png";
-import ImageTwo from "../../assets/ImageTwo.png";
-import ImageThree from "../../assets/ImageThree.png";
-import ImageFour from "../../assets/ImageFour.png";
+import ImageOne from "../../../assets/ImageOne.png";
+import ImageTwo from "../../../assets/ImageTwo.png";
+import ImageThree from "../../../assets/ImageThree.png";
+import ImageFour from "../../../assets/ImageFour.png";
 import styles from "./Images.module.css";
 
 const Images = () => {

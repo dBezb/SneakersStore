@@ -1,5 +1,5 @@
 import styles from "./AboutUs.module.css";
-import aboutUsImage from "../../assets/AboutUsImage.png";
+import aboutUsImage from "../../../assets/AboutUsImage.png";
 
 const AboutUs = () => {
   return (

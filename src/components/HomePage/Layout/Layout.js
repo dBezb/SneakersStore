@@ -1,6 +1,6 @@
 import styles from "./Layout.module.css";
-import SneackersHeader from "../../assets/SneackersHeader.png";
-import SneackersFind from "../../assets/SneackersFind.png";
+import SneackersHeader from "../../../assets/SneackersHeader.png";
+import SneackersFind from "../../../assets/SneackersFind.png";
 
 const Layout = () => {
   return (

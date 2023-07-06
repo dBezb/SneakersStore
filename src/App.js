@@ -1,18 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./components/Header/Header";
-import Layout from "./components/Layout/Layout";
-import NewArrivals from "./components/NewArrivals/NewArrivals";
-import AboutUs from "./components/AboutUs/AboutUs";
-import Footer from "./components/Footer/Footer";
+import HomePage from "./components/HomePage/HomePage";
+import NewArrivalsPage from "./components/NewArrivals/NewArrivalsPage";
 
 function App() {
+  const [activePage, setActivePage] = useState("home");
+
+  const handlePageChange = (page) => {
+    setActivePage(page);
+  };
+
   return (
     <React.Fragment>
-      <Header />
-      <Layout />
-      <NewArrivals />
-      <AboutUs />
-      <Footer />
+      <Header onPageChange={handlePageChange} />
+      {activePage === "home" && <HomePage />}
+      {activePage === "newArrivalsPage" && <NewArrivalsPage />}
     </React.Fragment>
   );
 }
