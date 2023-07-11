@@ -1,10 +1,10 @@
 import Footer from "../HomePage/Footer/Footer";
 import NewArrivalsSneakers from "./NewArrivalsSneakers/NewArrivalsSneakers";
 
-const NewArrivalsPage = () => {
+const NewArrivalsPage = (props) => {
   return (
     <div>
-      <NewArrivalsSneakers />
+      <NewArrivalsSneakers onPageChange={props.onPageChange} />
       <Footer />
     </div>
   );

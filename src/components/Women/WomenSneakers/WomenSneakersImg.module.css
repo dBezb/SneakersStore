@@ -1,0 +1,23 @@
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 1px 2px 2px rgba(0,0,0,0.27);
+    width: 90%;
+    
+    
+}
+.product > div {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid gray;
+    margin-bottom: 20px;
+  }
+
+  .product > div:hover,
+  .product > div:active {
+    background-color: rgb(208, 208, 208);
+    transition: background-color 0.4s ease;
+  }

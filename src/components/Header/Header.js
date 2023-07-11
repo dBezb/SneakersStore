@@ -20,8 +20,18 @@ const Header = (props) => {
         >
           New Arrivals
         </button>
-        <button className={styles.button}>Men</button>
-        <button className={styles.button}>Women</button>
+        <button
+          className={styles.button}
+          onClick={() => props.onPageChange("men")}
+        >
+          Men
+        </button>
+        <button
+          className={styles.button}
+          onClick={() => props.onPageChange("women")}
+        >
+          Women
+        </button>
         <CartButton />
       </header>
     </>

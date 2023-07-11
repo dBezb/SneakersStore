@@ -9,7 +9,7 @@ import NewSneakersEight from "../NewArrivalsSneakers/SneakersImages/NewSneakersE
 import NewSneakersNine from "../NewArrivalsSneakers/SneakersImages/NewSneakersNine.png";
 import styles from "./NewSneakersImg.module.css";
 
-const NewSneakersImg = () => {
+const NewSneakersImg = (props) => {
   const images = [
     {
       id: 1,
@@ -80,7 +80,7 @@ const NewSneakersImg = () => {
   return (
     <div className={styles.product}>
       {images.map((image) => (
-        <div key={image.id}>
+        <div key={image.id} onClick={() => props.onPageChange("home")}>
           <img src={image.src} alt={image.alt} />
           <h3>{image.caption}</h3>
           <p>{image.price}</p>
