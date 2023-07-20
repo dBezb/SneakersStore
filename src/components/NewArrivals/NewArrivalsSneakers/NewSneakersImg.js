@@ -77,10 +77,14 @@ const NewSneakersImg = (props) => {
     },
   ];
 
+  const filteredImages = props.selectedBrand
+    ? images.filter((image) => image.caption.includes(props.selectedBrand))
+    : images;
+
   return (
     <div className={styles.product}>
-      {images.map((image) => (
-        <div key={image.id} onClick={() => props.onPageChange("home")}>
+      {filteredImages.map((image) => (
+        <div key={image.id}>
           <img src={image.src} alt={image.alt} />
           <h3>{image.caption}</h3>
           <p>{image.price}</p>

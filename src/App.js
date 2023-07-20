@@ -16,9 +16,7 @@ function App() {
     <React.Fragment>
       <Header onPageChange={handlePageChange} />
       {activePage === "home" && <HomePage />}
-      {activePage === "newArrivalsPage" && (
-        <NewArrivalsPage onPageChange={handlePageChange} />
-      )}
+      {activePage === "newArrivalsPage" && <NewArrivalsPage />}
       {activePage === "men" && <Men />}
       {activePage === "women" && <Women />}
     </React.Fragment>

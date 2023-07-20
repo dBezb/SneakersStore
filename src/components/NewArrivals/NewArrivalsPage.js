@@ -1,10 +1,20 @@
+import { useState } from "react";
 import Footer from "../HomePage/Footer/Footer";
 import NewArrivalsSneakers from "./NewArrivalsSneakers/NewArrivalsSneakers";
 
-const NewArrivalsPage = (props) => {
+const NewArrivalsPage = () => {
+  const [selectedBrand, setSelectedBrand] = useState(null);
+
+  const handleBrandChange = (brand) => {
+    setSelectedBrand(brand);
+  };
+
   return (
     <div>
-      <NewArrivalsSneakers onPageChange={props.onPageChange} />
+      <NewArrivalsSneakers
+        selectedBrand={selectedBrand}
+        onBrandChange={handleBrandChange}
+      />
       <Footer />
     </div>
   );
