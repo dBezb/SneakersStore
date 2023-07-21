@@ -9,25 +9,33 @@ const Header = (props) => {
       <header className={styles.header}>
         <img src={Logo} alt="Logo" />
         <button
-          className={styles.button}
+          className={`${styles.button} ${
+            props.activePage === "home" ? styles.active : ""
+          }`}
           onClick={() => props.onPageChange("home")}
         >
           Home
         </button>
         <button
-          className={styles.button}
+          className={`${styles.button} ${
+            props.activePage === "newArrivalsPage" ? styles.active : ""
+          }`}
           onClick={() => props.onPageChange("newArrivalsPage")}
         >
           New Arrivals
         </button>
         <button
-          className={styles.button}
+          className={`${styles.button} ${
+            props.activePage === "men" ? styles.active : ""
+          }`}
           onClick={() => props.onPageChange("men")}
         >
           Men
         </button>
         <button
-          className={styles.button}
+          className={`${styles.button} ${
+            props.activePage === "women" ? styles.active : ""
+          }`}
           onClick={() => props.onPageChange("women")}
         >
           Women

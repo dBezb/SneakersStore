@@ -10,11 +10,12 @@ function App() {
 
   const handlePageChange = (page) => {
     setActivePage(page);
+    window.scrollTo(0, 0);
   };
 
   return (
     <React.Fragment>
-      <Header onPageChange={handlePageChange} />
+      <Header activePage={activePage} onPageChange={handlePageChange} />
       {activePage === "home" && <HomePage />}
       {activePage === "newArrivalsPage" && <NewArrivalsPage />}
       {activePage === "men" && <Men />}

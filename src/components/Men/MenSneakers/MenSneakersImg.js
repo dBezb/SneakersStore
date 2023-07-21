@@ -5,7 +5,7 @@ import NewSneakersSix from "../../NewArrivals/NewArrivalsSneakers/SneakersImages
 import NewSneakersSeven from "../../NewArrivals/NewArrivalsSneakers/SneakersImages/NewSneakersSeven.png";
 import styles from "./MenSneakersImg.module.css";
 
-const MenSneakersImg = () => {
+const MenSneakersImg = (props) => {
   const images = [
     {
       id: 2,
@@ -45,9 +45,13 @@ const MenSneakersImg = () => {
     },
   ];
 
+  const filteredImages = props.selectedBrand
+    ? images.filter((image) => image.caption.includes(props.selectedBrand))
+    : images;
+
   return (
     <div className={styles.product}>
-      {images.map((image) => (
+      {filteredImages.map((image) => (
         <div key={image.id}>
           <img src={image.src} alt={image.alt} />
           <h3>{image.caption}</h3>
