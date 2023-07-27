@@ -8,9 +8,8 @@ const Header = (props) => {
   return (
     <>
       <header className={styles.header}>
-        <Link to="/">
-          <img src={Logo} alt="Logo" />
-        </Link>
+        <img src={Logo} alt="Logo" />
+
         <nav>
           <Link
             to="/home"

@@ -1,5 +1,6 @@
+import React from "react";
 import { Link } from "react-router-dom";
-import ProductDetails from "./ProductDetails";
+import styles from "./NewSneakersImg.module.css";
 import NewSneakersOne from "../NewArrivalsSneakers/SneakersImages/NewSneakersOne.png";
 import NewSneakersTwo from "../NewArrivalsSneakers/SneakersImages/NewSneakersTwo.png";
 import NewSneakersThree from "../NewArrivalsSneakers/SneakersImages/NewSneakersThree.png";
@@ -9,7 +10,6 @@ import NewSneakersSix from "../NewArrivalsSneakers/SneakersImages/NewSneakersSix
 import NewSneakersSeven from "../NewArrivalsSneakers/SneakersImages/NewSneakersSeven.png";
 import NewSneakersEight from "../NewArrivalsSneakers/SneakersImages/NewSneakersEight.png";
 import NewSneakersNine from "../NewArrivalsSneakers/SneakersImages/NewSneakersNine.png";
-import styles from "./NewSneakersImg.module.css";
 
 const NewSneakersImg = (props) => {
   const images = [
