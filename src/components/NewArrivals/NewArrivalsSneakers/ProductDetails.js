@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
-// import styles from "./ProductDetails.module.css";
+import styles from "./ProductDetails.module.css";
 import NewSneakersOne from "../NewArrivalsSneakers/SneakersImages/NewSneakersOne.png";
 import NewSneakersTwo from "../NewArrivalsSneakers/SneakersImages/NewSneakersTwo.png";
 import NewSneakersThree from "../NewArrivalsSneakers/SneakersImages/NewSneakersThree.png";
@@ -10,7 +10,9 @@ import NewSneakersSix from "../NewArrivalsSneakers/SneakersImages/NewSneakersSix
 import NewSneakersSeven from "../NewArrivalsSneakers/SneakersImages/NewSneakersSeven.png";
 import NewSneakersEight from "../NewArrivalsSneakers/SneakersImages/NewSneakersEight.png";
 import NewSneakersNine from "../NewArrivalsSneakers/SneakersImages/NewSneakersNine.png";
+import Footer from "../../HomePage/Footer/Footer";
 const ProductDetails = (props) => {
+  const [quantity, setQuantity] = useState(1);
   const { id: productId } = useParams();
   const images = [
     {
@@ -89,11 +91,32 @@ const ProductDetails = (props) => {
 
   const { src, alt, caption, price } = selectedProduct;
 
+  const handleIncrease = () => {
+    setQuantity((prevQuantity) => prevQuantity + 1);
+  };
+
+  const handleDecrease = () => {
+    if (quantity > 1) {
+      setQuantity((prevQuantity) => prevQuantity - 1);
+    }
+  };
+
   return (
     <div>
-      <img src={src} alt={alt} />
-      <h3>{caption}</h3>
-      <p>{price}</p>
+      <div className={styles.productDetails}>
+        <img src={src} alt={alt} />
+        <div className={styles.details}>
+          <h3>{caption}</h3>
+          <p>{price}</p>
+        </div>
+        <div className={styles.quantityControl}>
+          <button onClick={handleDecrease}>-</button>
+          <span>{quantity}</span>
+          <button onClick={handleIncrease}>+</button>
+        </div>
+        <button className={styles.addToCartButton}>Add to Cart</button>
+      </div>
+      <Footer />
     </div>
   );
 };

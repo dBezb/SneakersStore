@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import NewSneakersTwo from "../../NewArrivals/NewArrivalsSneakers/SneakersImages/NewSneakersTwo.png";
 import NewSneakersFour from "../../NewArrivals/NewArrivalsSneakers/SneakersImages/NewSneakersFour.png";
 import NewSneakersFive from "../../NewArrivals/NewArrivalsSneakers/SneakersImages/NewSneakersFive.png";
@@ -53,9 +54,11 @@ const MenSneakersImg = (props) => {
     <div className={styles.product}>
       {filteredImages.map((image) => (
         <div key={image.id}>
-          <img src={image.src} alt={image.alt} />
-          <h3>{image.caption}</h3>
-          <p>{image.price}</p>
+          <Link to={`/product/${image.id}`}>
+            <img src={image.src} alt={image.alt} />
+            <h3>{image.caption}</h3>
+            <p>{image.price}</p>
+          </Link>
         </div>
       ))}
     </div>

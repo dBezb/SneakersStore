@@ -1,0 +1,79 @@
+.productDetails {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .productDetails img {
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9;
+  }
+  
+  .productDetails .details {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column; 
+    padding-left: 20px;
+  }
+  
+  .productDetails .details h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    font-family: "Poppins", sans-serif;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .productDetails .details p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  .quantityControl {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-right: 25px;
+  }
+  
+  .quantityControl button {
+    font-size: 18px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    cursor: pointer;
+  }
+  
+  .quantityControl span {
+    font-size: 18px;
+    margin: 0 10px;
+  }
+  
+  .addToCartButton {
+    font-weight: bold;
+    cursor: pointer;
+    font: inherit;
+    border: none;
+    background-color: #d90429;
+    color: white;
+    padding: 0.5rem 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.27);
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  .addToCartButton:hover {
+    background-color: rgb(138, 29, 29);
+    transition: background-color 0.4s ease;
+}
