@@ -42,7 +42,7 @@ const Header = (props) => {
             Women
           </Link>
         </nav>
-        <CartButton />
+        <CartButton onShowCart={props.onShowCart} />
       </header>
     </>
   );
