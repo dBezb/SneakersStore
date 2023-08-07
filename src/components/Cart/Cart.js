@@ -11,7 +11,12 @@ const Cart = (props) => {
       {cartCtx.items.map((item) => (
         <li key={item.id}>
           {item.name} - {item.price} x {item.amount}
-          <button onClick={() => cartCtx.removeItem(item.id)}>Delete</button>
+          <button
+            onClick={() => cartCtx.removeItem(item.id)}
+            className={styles["delete-button"]}
+          >
+            Delete
+          </button>
         </li>
       ))}
     </ul>
@@ -21,7 +26,7 @@ const Cart = (props) => {
     <Modal>
       <div>{cartItems}</div>
       <div className={styles.total}>
-        <span>All:</span>
+        <span>Total:</span>
         <span>{cartCtx.totalAmount}$</span>
       </div>
       <div className={styles.actions}>

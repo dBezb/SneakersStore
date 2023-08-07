@@ -4,11 +4,11 @@ import Footer from "../HomePage/Footer/Footer";
 import Layout from "../HomePage/Layout/Layout";
 import NewArrivals from "../HomePage/NewArrivals/NewArrivals";
 
-const HomePage = () => {
+const HomePage = (props) => {
   return (
     <React.Fragment>
-      <Layout />
-      <NewArrivals />
+      <Layout onPageChange={props.onPageChange} />
+      <NewArrivals onPageChange={props.onPageChange} />
       <AboutUs />
       <Footer />
     </React.Fragment>

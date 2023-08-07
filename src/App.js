@@ -41,7 +41,10 @@ function App() {
           onShowCart={handleShowCart}
         />
         <Routes>
-          <Route path="/home" element={<HomePage />} />
+          <Route
+            path="/home"
+            element={<HomePage onPageChange={handlePageChange} />}
+          />
           <Route path="/new-arrivals" element={<NewArrivalsPage />} />
           <Route path="/men" element={<Men />} />
           <Route path="/women" element={<Women />} />

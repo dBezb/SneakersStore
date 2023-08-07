@@ -1,8 +1,10 @@
+import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./Layout.module.css";
 import SneackersHeader from "../../../assets/SneackersHeader.png";
 import SneackersFind from "../../../assets/SneackersFind.png";
 
-const Layout = () => {
+const Layout = (props) => {
   return (
     <>
       <div className={styles.layout}>
@@ -14,7 +16,13 @@ const Layout = () => {
           with a swift touch of modernism
         </h3>
         <h3>Only 60$</h3>
-        <button className={styles.button}>Add to cart</button>
+        <Link
+          to="/new-arrivals"
+          onClick={() => props.onPageChange("newArrivalsPage")}
+        >
+          <button className={styles.button}>Check the New Arrivals!</button>
+        </Link>
+
         <br></br>
         <img
           src={SneackersFind}

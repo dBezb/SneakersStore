@@ -4,6 +4,7 @@
     padding: 0;
     max-height: 20rem;
     overflow: auto;
+    font-family: 'Poppins', sans-serif;
   }
   
   .total {
@@ -45,3 +46,38 @@
     background-color: #D90429;
     color: white;
   }
+
+  .delete-button {
+    position: relative;
+    width: 70px;
+    height: 22px;
+    border-radius: 5px;
+    border: 2px solid rgb(231, 50, 50);
+    background-color: #fff;
+    cursor: pointer;
+    overflow: hidden;
+    transition: .3s;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 5px;
+}
+
+  .delete-button:hover {
+    background-color: rgb(245, 207, 207);
+    transition: .3s;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

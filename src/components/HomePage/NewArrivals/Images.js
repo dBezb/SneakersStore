@@ -1,10 +1,12 @@
+import React from "react";
+import { Link } from "react-router-dom";
 import ImageOne from "../../../assets/ImageOne.png";
 import ImageTwo from "../../../assets/ImageTwo.png";
 import ImageThree from "../../../assets/ImageThree.png";
 import ImageFour from "../../../assets/ImageFour.png";
 import styles from "./Images.module.css";
 
-const Images = () => {
+const Images = (props) => {
   const images = [
     {
       id: 1,
@@ -41,9 +43,14 @@ const Images = () => {
     <div className={styles.product}>
       {images.map((image) => (
         <div key={image.id}>
-          <img src={image.src} alt={image.alt} />
-          <h3>{image.caption}</h3>
-          <p>{image.price}</p>
+          <Link
+            to="/new-arrivals"
+            onClick={() => props.onPageChange("newArrivalsPage")}
+          >
+            <img src={image.src} alt={image.alt} />
+            <h3>{image.caption}</h3>
+            <p>{image.price}</p>
+          </Link>
         </div>
       ))}
     </div>
