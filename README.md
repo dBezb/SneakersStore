@@ -32,4 +32,10 @@
 - [ ] Optimize code
 
 <h1 align="center">Screenshots</h1>
-    ![home1](public/home1.png)
+    <img src="./public/home1.png">
+    <img src="./public/home2.png">
+    <img src="./public/home3.png">
+    <img src="./public/NewArrivals1.png">
+    <img src="./public/NewArrivals2.png">
+    <img src="./public/ProductPage.png">
+    <img src="./public/Cart.png">
