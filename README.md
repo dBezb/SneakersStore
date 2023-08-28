@@ -17,5 +17,19 @@
 
 <h1 align="center">To do</h1>
 
-- [x] Make a project
-- [ ] ...
+- [x] Make a header
+- [x] Make a home page
+- [x] Make a Men, Women and New arrivals section
+- [x] Update design in sections
+- [x] Added filtering by brand
+- [x] Added a React Router
+- [x] Added a product page
+- [x] Make a cart
+- [x] Added a modal window
+- [x] Make a cart functionality
+- [ ] Upgrade a product page
+- [ ] Make responsive design
+- [ ] Optimize code
+
+<h1 align="center">Screenshots</h1>
+    ![home1](public/home1.png)
