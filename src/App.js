@@ -42,7 +42,7 @@ function App() {
         />
         <Routes>
           <Route
-            path="/home"
+            path="/"
             element={<HomePage onPageChange={handlePageChange} />}
           />
           <Route path="/new-arrivals" element={<NewArrivalsPage />} />
