@@ -12,9 +12,9 @@ const Header = (props) => {
 
         <nav>
           <Link
-            to="/"
-            className={props.activePage === "/" ? styles.active : ""}
-            onClick={() => props.onPageChange("/")}
+            to="/home"
+            className={props.activePage === "/home" ? styles.active : ""}
+            onClick={() => props.onPageChange("/home")}
           >
             Home
           </Link>

@@ -11,7 +11,7 @@ import CartContextProvider from "./store/CartContextProvider";
 
 function App() {
   const storedActivePage = localStorage.getItem("activePage");
-  const initialActivePage = storedActivePage || "/";
+  const initialActivePage = storedActivePage || "/home";
   const [activePage, setActivePage] = useState(initialActivePage);
   const [cartIsVisible, SetCartIsVisible] = useState(false);
 
@@ -42,7 +42,7 @@ function App() {
         />
         <Routes>
           <Route
-            path="/"
+            path="/home"
             element={<HomePage onPageChange={handlePageChange} />}
           />
           <Route path="/new-arrivals" element={<NewArrivalsPage />} />
